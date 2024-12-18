@@ -9,6 +9,11 @@ root.render(
   <React.StrictMode>
     <title>yubutb</title>
     <App />
+    {/* <video width="500" controls >
+    <source src="./0001-0250.mp4" type="video/mp4"></source>
+    <source src="./0001-0250.webm" type="video/webm"/>
+    Your browser does not support HTML video.
+  </video> */}
   </React.StrictMode>
 );
 

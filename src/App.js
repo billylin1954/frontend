@@ -1,25 +1,36 @@
-
 import './App.css';
-function Videos(props){
-  //let films=['./videos/0001-0250.mp4','./videos/0001-0030.mp4']
+
+
+  let vids=["./uploads/0001-0030.mp4","/uploads/My video - Date(1) (online-video-cutter.com) (1).mp4","./uploads/7 Days Stranded In A Cave.mp4","./uploads/How to make your country a superpower.mp4","./uploads/lies I believed as a kid.mp4",];
   
-  return(
-    <video width="250" height="250" controls>
-      <source src="/videos/0001-0250.mp4" type="video/mp4"/>
-      <source src="/videos/0001-0250.webm" type="video/webm"/>
-    </video>
-  );
-}
+  function Car(props) {
+    return <h2><video width="500" controls >
+    <source src={props.brand} type="video/mp4"></source>
+   <br></br>
+  </video> </h2>;
+  }
+  
+  function Garage() {
+    
+    return (
+      <>
+        
+        
+          {vids.map((car) => <Car brand={car} />)}
+        
+      </>
+    );
+  }
+  
 function App() {
-  
   return (
     <div>
-      <h1>yubtub</h1>
-      <br></br>
-      <h1>random videos</h1>  
-      <Videos/>
+      <a href="./upload.html">upload video</a>
+      <h1>Yubtub</h1>
+      <h2>Random Videos</h2>
+      <br/>
+     <Garage/>
     </div>
-
   );
 }
 
