@@ -1,7 +1,7 @@
 import './App.css';
 
 
-  let vids=["./uploads/0001-0030.mp4","/uploads/My video - Date(1) (online-video-cutter.com) (1).mp4","./uploads/7 Days Stranded In A Cave.mp4","./uploads/How to make your country a superpower.mp4","./uploads/lies I believed as a kid.mp4",];
+  let vids=["./uploads/0001-0030.mp4","./uploads/0001-0250.mp4","./uploads/3.mp4","./uploads/2.mp4","./uploads/5.mp4"];
   
   function Car(props) {
     return <h2><video width="500" controls >
